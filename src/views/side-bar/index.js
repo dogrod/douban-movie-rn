@@ -14,8 +14,8 @@ import {
 } from 'native-base'
 
 const routes = ['Home', 'Chat', 'Profile']
-const avatarBackgroundSource = { uri: 'https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/drawer-cover.png' }
-const avatarSource = { uri: 'https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/logo.png' }
+const avatarBackgroundSrc = require('../../assets/images/banner_background.jpg')
+const avatarSrc = require('../../assets/images/avatar.jpg')
 
 export default class SideBar extends React.Component {
   render() {
@@ -24,14 +24,8 @@ export default class SideBar extends React.Component {
         <Content>
           <Image
             style={styles.avatarBackground}
-            source={avatarBackgroundSource}
-          >
-            <Image
-              square
-              style={styles.avatar}
-              source={avatarSource}
-            />
-          </Image>
+            source={avatarBackgroundSrc}
+          />
           <List
             dataArray={routes}
             renderRow={

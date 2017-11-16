@@ -49,20 +49,18 @@ export default class Home extends React.Component {
             rounded
             dark
             style={styles.button}
-            textStyle={styles.buttonText}
             onPress={() => this.props.navigation.navigate('Chat')}
           >
-            <Text>Chat with people</Text>
+            <Text style={styles.buttonText}>Chat with people</Text>
           </Button>
           <Button
             full
             rounded
             primary
             style={styles.button}
-            textStyle={styles.buttonText}
             onPress={() => this.props.navigation.navigate('Profile')}
           >
-            <Text>Goto Profiles</Text>
+            <Text style={styles.buttonText}>Goto Profiles</Text>
           </Button>
         </Content>
       </Container>
@@ -75,6 +73,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   buttonText: {
-    color: '#fff'
+    color: '#ffffff'
   }
 })
